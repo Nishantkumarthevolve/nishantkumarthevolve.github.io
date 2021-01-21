@@ -1,0 +1,7 @@
+.header{
+    max-width: var(--max-width);
+}
+
+.navbar{
+    color: var(--gray-1);
+}
