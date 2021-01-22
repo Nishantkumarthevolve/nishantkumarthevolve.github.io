@@ -1,0 +1,13 @@
+.btn-primary{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dodger-blue);
+    height: 58px;
+    padding: 0.5rem 3rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    color: var(--white);
+    gap: 20px;
+    font-size: 1.2rem;
+}

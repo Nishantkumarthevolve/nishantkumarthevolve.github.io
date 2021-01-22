@@ -7,20 +7,56 @@
     <title>Nishant Kumar</title>
 </head>
 <body>
-    <header class="sticky top-0 h-28 w-full bg-white">
-        <div class="header flex items-center h-full w-full px-12 gap-20 mx-auto">
-            <img src="./images/logo.svg" alt="logo" srcset="./images/logo.svg">
-    
-            <nav class="navbar flex items-center w-full font-semibold">
-                <ul class="flex flex-1 gap-16 items-center">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
-                </ul>
+    <div id="root">
+        <!-- Header -->
+        <header class="fixed top-0 h-28 w-full z-10">
+            <div class="header flex items-center h-full w-full px-12 gap-20 mx-auto">
+                <img src="./images/logo.svg" alt="logo" srcset="./images/logo.svg">
         
-                <a href="#" class="block border border-solid border-gray-400 px-8 py-2 rounded-lg">Contact</a>
-            </nav>
-        </div>
-    </header>
+                <nav class="navbar flex items-center w-full font-semibold">
+                    <ul class="flex flex-1 gap-16 items-center">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                    </ul>
+            
+                    <a href="#contact" class="block border border-solid border-gray-400 px-8 py-2 rounded-lg">Contact</a>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <!-- Hero Section -->
+            <section class="hero min-h-screen relative flex items-center">
+                <div class="hero-wrapper px-12 w-full flex items-center">
+                    <div class="hero-wrapper__content">
+                        <p class="hero-wrapper__content__p">Hey! I'm Nishant Kumar</p>
+                        <h1 class="text-8xl font-bold text-blue-900">UI/UX Designer</h1>
+                        <p class="w-1/2 my-8 hero-wrapper__content__p">A freelance product designer specialized in designing digital product 
+                            like website, Web & Mobile application and much more. </p>
+                        <ul class="flex gap-12 font-semibold italic mb-8 hero-props">
+                            <li class="hero-props__items">Think</li>
+                            <li class="hero-props__items">Research</li>
+                            <li class="hero-props__items">Design</li>
+                        </ul>
+                        <!-- For resume updation change href -->
+                        <a href="https://drive.google.com/file/d/1GXo7Dzwwqv-hgzxfoK8ZDC1UVFQj0CC9/view" target="_blank" class="btn-primary">
+                            <span>Resume</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+                                <g id="Icon_feather-download" data-name="Icon feather-download" transform="translate(-3 -3)">
+                                    <path id="Path_4" data-name="Path 4" d="M28.5,22.5v5.333A2.667,2.667,0,0,1,25.833,30.5H7.167A2.667,2.667,0,0,1,4.5,27.833V22.5" transform="translate(0 -2)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                    <path id="Path_5" data-name="Path 5" d="M10.5,15l6.667,6.667L23.833,15" transform="translate(-0.667 -1.167)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                    <path id="Path_6" data-name="Path 6" d="M18,20.5V4.5" transform="translate(-1.5)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                </g>
+                            </svg> 
+                        </a>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="./images/hero-img.png" alt="hero-img" srcset="./images/hero-img.png">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
