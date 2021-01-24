@@ -2,6 +2,7 @@
 
 @import "./styles/_header.css";
 @import "./styles/_hero.css";
+@import "./styles/_about.css";
 @import "./styles/_component.css";
 
 :root{
@@ -9,6 +10,7 @@
     --tangaroa: #353A50;
     --gray-1: #666666;
     --gray-2: #222222;
+    --gray-3: #cccccc;
     --white: #ffffff;
 
     --max-width: 1180px;

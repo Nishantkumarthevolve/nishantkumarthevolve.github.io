@@ -1,0 +1,36 @@
+.about,
+.skills{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.profile-container{
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 550px;
+    border-radius: 17px;
+    background-image: url('../images/profile.jpg');
+    background-size: cover;
+    background-position: right;
+    clip-path: polygon(0 0, 86% 11%, 85% 85%, 0% 100%);
+}
+
+.progress-bar{
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray-3);
+    position: relative;
+}
+
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 2px;
+    background-color: var(--dodger-blue);
+    width: var(--data-width);
+}
