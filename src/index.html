@@ -9,15 +9,16 @@
 <body>
     <div id="root">
         <!-- Header -->
-        <header class="fixed top-0 h-28 w-full z-50">
+        <header class="header-container fixed top-0 h-28 w-full z-50">
             <div class="header flex items-center h-full w-full px-12 gap-20 mx-auto">
                 <img src="./images/logo.svg" alt="logo" srcset="./images/logo.svg">
         
                 <nav class="navbar flex items-center w-full font-semibold">
                     <ul class="flex flex-1 gap-16 items-center">
-                        <li><a href="/">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
                     </ul>
             
                     <a href="#contact" class="block border border-solid border-gray-400 px-8 py-2 rounded-lg">Contact</a>
@@ -27,7 +28,7 @@
     
         <main>
             <!-- Hero Section -->
-            <section class="hero min-h-screen relative flex items-center">
+            <section class="hero min-h-screen relative flex items-center" id="home">
                 <div class="hero-wrapper px-12 w-full flex items-center">
                     <div class="hero-wrapper__content">
                         <p class="hero-wrapper__content__p">Hey! I'm Nishant Kumar</p>
@@ -58,7 +59,7 @@
             </section>
 
             <!-- About Section -->
-            <section class="container about py-12 grid gap-10 md:grid-cols-12">
+            <section class="container about py-12 grid gap-10 md:grid-cols-12" id="about">
                 <div class="about-pofile md:col-span-6">
                     <div class="profile-container"></div>
                 </div>
@@ -160,7 +161,7 @@
             </section>
 
             <!-- Experience Section -->
-            <section class="container experience py-12">
+            <section class="container experience py-12" id="experience">
                 <h2 class="headline">My Experience</h2>
 
                 <ul class="mt-16">
@@ -219,11 +220,11 @@
             </section>
 
             <!-- Work Section -->
-            <section class="container work py-12">
+            <section class="container work py-12" id="projects">
                 <h3 class="headline">My Work</h3>
 
                 <!-- Work 1 -->
-                <div class="flex flex-col md:flex-row gap-x-5 mt-16">
+                <div class="flex flex-col gap-y-5 md:flex-row md:gap-y-0 md:gap-x-5 mt-16">
                     <div class="work-img flex-1">
                         <img src="./images/divine-wardrobe.png" alt="divine-wardrobe" width="100%">
                     </div>
@@ -282,7 +283,7 @@
                 </div>
 
                 <!-- Work 2 -->
-                <div class="flex flex-col md:flex-row-reverse gap-x-5 mt-16">
+                <div class="flex flex-col gap-y-5 md:flex-row-reverse md:gap-y-0 gap-x-5 mt-16">
                     <div class="work-img flex-1">
                         <img src="./images/starclinch.png" alt="divine-wardrobe" width="100%">
                     </div>
@@ -331,6 +332,30 @@
                                 </g>
                             </svg>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="container contact py-12" id="contact">
+                <div class="md:min-h-screen flex flex-col gap-y-5 md:flex-row md:items-center md:gap-y-0 md:gap-x-8">
+                    <div class="contact-img flex-1">
+                        <img src="./images/contact.svg" alt="contact" width="100%">
+                    </div>
+
+                    <div class="contact-content flex-1 py-12">
+                        <p class="font-semibold text-gray-600">What's Next?</p>
+                        <h4 class="text-3xl font-semibold">Let's Connect</h4>
+                        <p class="my-6">
+                            Whether you want to collaborate on some 
+                            exciting projects or planning to hire, just 
+                            contact me. 
+                        </p>
+                        <p class="mb-6 flex flex-col font-semibold">
+                            <span>My Email:</span>
+                            <a href="mailto:nishantkumar19952301@gmail.com" class="text-blue-600">nishantkumar19952301@gmail.com</a>
+                        </p>
+                        <a href="mailto:nishantkumar19952301@gmail.com" class="btn-primary">Get in touch</a>
                     </div>
                 </div>
             </section>

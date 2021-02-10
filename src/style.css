@@ -13,6 +13,8 @@
     --gray-2: #222222;
     --gray-3: #cccccc;
     --white: #ffffff;
+    
+    --op-white: rgba(255, 255, 255, 0.8);
 
     --max-width: 1180px;
 }
@@ -24,6 +26,7 @@
 html,
 body{
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 @media (min-width: 768px){
