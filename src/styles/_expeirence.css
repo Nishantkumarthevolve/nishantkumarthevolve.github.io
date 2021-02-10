@@ -46,3 +46,27 @@
 .job-description {
     color: var(--gray-1);
 }
+
+/* Work */
+.external-link{
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 2rem;
+    border: 1px solid var(--gray-1);
+    color: var(--gray-1);
+    border-radius: 88px;
+    transition: all .25s ease-in-out;
+}
+
+.external-link svg{
+    width: 24px;
+    height: 24px;
+}
+
+.external-link:hover,
+.external-link:focus{
+    border: 1px solid var(--gray-2);
+    color: var(--gray-2);
+}
