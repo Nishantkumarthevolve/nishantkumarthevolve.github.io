@@ -4,6 +4,7 @@
 @import "./styles/_hero.css";
 @import "./styles/_about.css";
 @import "./styles/_component.css";
+@import "./styles/_expeirence.css";
 
 :root{
     --dodger-blue: #0066ff;

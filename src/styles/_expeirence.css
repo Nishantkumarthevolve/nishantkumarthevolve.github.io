@@ -1,0 +1,48 @@
+.experience-path,
+.experience-path-content{
+    position:  relative;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+
+.experience-path::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--dodger-blue);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.experience-path-content::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: calc(100% + 4px);
+    background-color: var(--gray-1);
+    position: absolute;
+    top: -4px;
+    left: 12px;
+}
+
+.job-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray-1);
+}
+
+.job-service{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dodger-blue);
+    padding: 0.25rem 0rem;   
+}
+
+.job-description {
+    color: var(--gray-1);
+}

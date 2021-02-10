@@ -12,6 +12,11 @@
     font-size: 1.2rem;
 }
 
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
 .headline{
     font-size: 2rem;
     font-weight: 700;
