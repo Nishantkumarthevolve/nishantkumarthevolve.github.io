@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap);
+.header{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.head-scroll{
+    background-color: var(--op-white);
+    backdrop-filter: blur(40%);
+    box-shadow: 0 10px 20px -10px rgba(59, 59, 59, 0.20);
+}
+
+.navbar{
+    color: var(--gray-1);
+}
+.hero:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/68a2b209f551fe2afab3aba019ebc834.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.hero-wrapper{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.hero-wrapper__content__p{
+    color: var(--gray-1);
+}
+
+.hero-props{
+    border-left: 3px solid var(--tangaroa);
+    padding-left: 1rem;
+}
+
+.hero-props__items{
+    position: relative;
+    color: var(--gray-2);
+}
+
+.hero-props__items:not(:first-of-type):before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: .5rem;
+    height: 2px;
+    background-color: var(--gray-2);
+    left: -1.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.profile-container{
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 550px;
+    border-radius: 17px;
+    background-image: url(/images/0f2e8895e49095d7e46afee5283dfb18.jpg);
+    background-size: cover;
+    background-position: right;
+    clip-path: polygon(0 0, 86% 11%, 85% 85%, 0% 100%);
+}
+
+.progress-bar{
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray-3);
+    position: relative;
+}
+
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 2px;
+    background-color: var(--dodger-blue);
+    width: var(--data-width);
+}
+.btn-primary{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dodger-blue);
+    height: 58px;
+    padding: 0.5rem 3rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    color: var(--white);
+    gap: 20px;
+    font-size: 1.2rem;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.headline{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--gray-1);
+    position: relative;
+}
+
+.headline::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--gray-1);
+    bottom: 0;
+    left: 0;
+}
+.experience-path,
+.experience-path-content{
+    position:  relative;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+
+.experience-path::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--dodger-blue);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.experience-path-content::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: calc(100% + 4px);
+    background-color: var(--gray-1);
+    position: absolute;
+    top: -4px;
+    left: 12px;
+}
+
+.job-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray-1);
+}
+
+.job-service{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dodger-blue);
+    padding: 0.25rem 0rem;   
+}
+
+.job-description {
+    color: var(--gray-1);
+}
+
+/* Work */
+.external-link{
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 2rem;
+    border: 1px solid var(--gray-1);
+    color: var(--gray-1);
+    border-radius: 88px;
+    transition: all .25s ease-in-out;
+}
+
+.external-link svg{
+    width: 24px;
+    height: 24px;
+}
+
+.external-link:hover,
+.external-link:focus{
+    border: 1px solid var(--gray-2);
+    color: var(--gray-2);
+}
+:root{
+    --dodger-blue: #0066ff;
+    --tangaroa: #353A50;
+    --gray-1: #666666;
+    --gray-2: #222222;
+    --gray-3: #cccccc;
+    --white: #ffffff;
+    
+    --op-white: rgba(255, 255, 255, 0.8);
+
+    --max-width: 1180px;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body{
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px){
+    html,
+    body{
+        font-size: 16px;
+    }
+}
+
+/*# sourceMappingURL=main.css.map*/
